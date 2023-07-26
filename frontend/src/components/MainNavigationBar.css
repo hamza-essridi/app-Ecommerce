@@ -1,0 +1,5 @@
+.nav-links:hover {
+    background-color:rgb(109, 154, 226); /*will change background-color of element on hover */
+    color: white; /*will change color of text within the element on hover */
+    text-decoration: underline;
+    }

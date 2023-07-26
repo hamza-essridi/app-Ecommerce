@@ -1,0 +1,15 @@
+.nav-links:hover {
+    background-color:rgb(109, 154, 226); /*will change background-color of element on hover */
+    color: white; /*will change color of text within the element on hover */
+    text-decoration: underline;
+    }
+
+.mainmenu-area ul.navbar-nav li a {
+        color: #6e6a6a;
+        font-size: 14px;
+        padding: 20px;
+    }
+    
+.mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li a.router-link-exact-active {background: #5a88ca; color:#FFF;}
+.mainmenu-area .nav > li > a:focus {color: #FFF;}
+    

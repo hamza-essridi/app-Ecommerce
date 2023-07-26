@@ -1,0 +1,50 @@
+.shopping-item {
+    border: 1px solid #ddd;
+    float: right;
+    font-size: 18px;
+    margin-top: 40px;
+    padding: 10px;
+    position: relative;
+}
+.shopping-item a {
+    color: #666;
+}
+.cart-amunt {
+    color: #5a88ca;
+    font-weight: 700;
+}
+
+a {color: #5a88ca}
+a:hover, a:focus {color: #17a78b}
+
+input[type="text"] {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+input[type="button"], button[type=button] {
+    background: none repeat scroll 0 0 #5a88ca;
+    border: medium none;
+    color: #fff;
+    padding: 11px 20px;
+    text-transform: uppercase;
+}
+input[type="button"]:hover, button[type=button]:hover {background-color: #222}
+
+.logo h1 {
+    font-size: 40px;
+    margin: 30px 0;font-weight: 400;
+}
+.logo h1 a {
+    color: #999;
+}
+.logo h1 a:hover {text-decoration: none;opacity: .7}
+
+.logo h1 a span {
+    color: #5a88ca;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

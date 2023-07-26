@@ -1,0 +1,22 @@
+.wid-view-more {
+  background: none repeat scroll 0 0 #5a88ca;
+  color: #fff;
+  padding: 3px 15px;
+  position: absolute;
+  right: 10px;
+  top: 3px;
+}
+.wid-view-more:hover {
+  color: #fff;
+  background-color: #222;
+  text-decoration: none;
+}
+.product-wid-title {
+  font-family: raleway;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+.single-product-widget {
+  position: relative;
+}

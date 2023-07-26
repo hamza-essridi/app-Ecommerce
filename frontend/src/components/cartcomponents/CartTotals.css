@@ -1,0 +1,20 @@
+.cart_totals {
+  float: right;
+  margin-bottom: 50px;
+  width: 40%;
+}
+.cart_totals table {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  width: 100%;
+}
+.cart_totals table th,
+.cart_totals table td {
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}
+
+.cart_totals table th {
+  background: none repeat scroll 0 0 #f4f4f4;
+}

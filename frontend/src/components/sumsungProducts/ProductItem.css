@@ -1,0 +1,21 @@
+.single-shop-product h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.single-shop-product {margin-bottom: 50px}
+.product-carousel-price ins {
+    color: #5a88ca;
+    font-weight: 700;
+    margin-right: 5px;
+    text-decoration: none;
+  }
+.product-option-shop {
+    margin-top: 15px;
+}
+.add_to_cart_button {
+    background: none repeat scroll 0 0 #5a88ca;
+    border: medium none;
+    color: #fff;
+    padding: 6px 25px;display: inline-block
+}
+.add_to_cart_button:hover {background-color: #222;color: #fff;text-decoration: none}

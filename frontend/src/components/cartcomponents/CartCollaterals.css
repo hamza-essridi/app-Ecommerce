@@ -1,0 +1,54 @@
+.cart-collaterals {
+    overflow: hidden;
+}
+.cart-collaterals h2 {
+    color: #5a88ca;
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+div.cart-collaterals ul.products {
+    list-style: outside none none;
+    margin: 0 0 0 -30px;
+    padding: 0;
+}
+div.cart-collaterals ul.products li.product {
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    width: 198px;
+}
+div.cart-collaterals ul.products li.product .onsale {
+    background: none repeat scroll 0 0 #5a88ca;
+    color: #fff;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+}
+div.cart-collaterals ul.products li.product h3 {
+    color: #333;
+    font-size: 20px;
+    margin-top: 15px;
+}
+div.cart-collaterals ul.products li.product .price {
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+div.cart-collaterals ul.products li.product .price ins {
+    color: #5a88ca;
+    font-weight: 700;
+    margin-left: 10px;
+    text-decoration: none;
+}
+div.cart-collaterals ul.products li.product a:hover h3 {color: #5a88ca}
+div.cart-collaterals ul.products li.product a:hover {text-decoration: none}
+
+div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background-color: #222}
+
+
+.cart-collaterals .shipping_calculator {
+  float: right;
+  width: 40%;
+}
