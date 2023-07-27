@@ -1,11 +1,18 @@
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import "./ShopTable.css";
 import ProductTable from "./ProductTable";
 import Button from "../UI/Button";
 
 const ShopTable = () => {
   const product = useSelector((state) => state.prods.products);
+  const navigate =useNavigate();
 
+const checkoutHandler =()=>{
+
+  navigate("/ckeckout/result");
+}
+  
   return (
     <>
       <table cellSpacing="0" className="shop_table cart">
@@ -38,7 +45,7 @@ const ShopTable = () => {
           <tr>
             <td className="actions" colSpan="6">
               
-              <Button>CHECKOUT</Button>
+              <Button onClick={checkoutHandler}>CHECKOUT</Button>
             </td>
           </tr>
         </tbody>
