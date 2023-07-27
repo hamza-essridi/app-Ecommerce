@@ -17,8 +17,8 @@ const ProductItem = (props) => {
     props.price * (props.discountRate / 100)
   ).toFixed(2);
   let srcImage = props.image.split("-")[0];
-  let urlImage = `produts-img/${srcImage}/${props.image}`;
-  //console.log(urlImage);
+  let urlImage = `/produts-img/${srcImage}/${props.image}`;
+  console.log(urlImage);
   const addProductHandler = () => {
     console.log("helllllo");
     dispatch(
@@ -39,6 +39,7 @@ const ProductItem = (props) => {
       <div className="single-shop-product">
         <div className="product-upper">
           <img src={urlImage} alt={props.name} />
+         
         </div>
         <h2>
           <NavLink to={`/product/${props.name}`} onClick={viewProductHandler}>
