@@ -8,7 +8,7 @@ import BillingDetailsForm from './BillingDetailsForm';
 const GlobaleForm = (props) => {
     const [isChecked, setIsChecked] = useState(false);
     const [billingAdressData, setBillingAdressData] = useState({
-        
+
         civility: "",
         firstName: "",
         lastName: "",
@@ -19,10 +19,10 @@ const GlobaleForm = (props) => {
         city: "",
         email: "",
         phone: "",
-        adress:"",
-      });
-      const [differentAddressData, setDifferentAddressData] = useState({
-        
+        adress: "",
+    });
+    const [differentAddressData, setDifferentAddressData] = useState({
+
         civility: "",
         firstName: "",
         lastName: "",
@@ -33,8 +33,8 @@ const GlobaleForm = (props) => {
         city: "",
         email: "",
         phone: "",
-        adress:"",
-      });
+        adress: "",
+    });
 
 
     const checkboxChangeHandler = (event) => {
@@ -54,8 +54,11 @@ const GlobaleForm = (props) => {
         <form action="#" className="checkout" name="checkout">
 
             <div id="customer_details" className="col2-set">
-                <BillingDetailsForm formData={billingAdressData} setFormData={setBillingAdressData}/>
-
+                <div className="col-6">
+                    <div className="woocommerce-billing-fields">
+                        <BillingDetailsForm title="Billing Details" formData={billingAdressData} setFormData={setBillingAdressData} />
+                    </div>
+                </div>
 
                 <div className="col-6">
                     <div className="woocommerce-shipping-fields">
@@ -63,8 +66,8 @@ const GlobaleForm = (props) => {
                             <label className="checkbox" htmlFor="ship-to-different-address-checkbox">Ship to a different address?</label>
                             <input onChange={checkboxChangeHandler} checked={isChecked} type="checkbox" defaultValue="1" name="ship_to_different_address" className="input-checkbox" id="ship-to-different-address-checkbox" />
                         </h3>
-                        {isChecked && <DiffAdress />}
-                        {/* {isChecked && <BillingDetailsForm formData={differentAddressData} setFormData={setDifferentAddressData}/>} */}
+                        {/* {isChecked && <DiffAdress />} */}
+                        {isChecked && <BillingDetailsForm title="shippingAdress" formData={differentAddressData} setFormData={setDifferentAddressData}/>}
 
 
 

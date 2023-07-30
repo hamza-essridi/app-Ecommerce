@@ -102,9 +102,8 @@ const BillingDetailsForm = (props) => {
     };
 
     return (<>
-        <div className="col-6">
-            <div className="woocommerce-billing-fields">
-                <h3>Billing Details</h3>
+       
+                <h3>{props.title}</h3>
                 <p id="billing_country_field" className="form-row form-row-wide address-field update_totals_on_change validate-required woocommerce-validated">
                     <label className="" htmlFor="billing_country">Civility <abbr title="required" className="required">*</abbr>
                     </label>
@@ -178,8 +177,7 @@ const BillingDetailsForm = (props) => {
 
 
 
-            </div>
-        </div>
+          
 
 
     </>);
