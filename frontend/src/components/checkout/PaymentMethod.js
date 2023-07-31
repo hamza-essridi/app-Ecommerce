@@ -1,13 +1,15 @@
 import { useState } from "react";
 
 
-const PaymentMethod = () => {
+const PaymentMethod = (props) => {
 
     const [selectedOption, setSelectedOption] = useState('');
 
     const handleChange = (event) => {
         console.log(event.target.value)
         setSelectedOption(event.target.value);
+        
+        props.onSelectPayment(event.target.value)
     };
 
     return (<>

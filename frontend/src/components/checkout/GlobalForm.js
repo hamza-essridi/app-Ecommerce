@@ -7,6 +7,8 @@ import BillingDetailsForm from './BillingDetailsForm';
 
 const GlobaleForm = (props) => {
     const [isChecked, setIsChecked] = useState(false);
+    const [paymentType, setPaymentType] = useState('');
+
     const [billingAdressData, setBillingAdressData] = useState({
 
         civility: "",
@@ -46,6 +48,12 @@ const GlobaleForm = (props) => {
 
     }
 
+    const PaymentTypeHandler = (event) => {
+        setPaymentType(event)
+        console.log(event)
+        console.log(paymentType)
+
+    }
     return (<>
 
 
@@ -67,7 +75,7 @@ const GlobaleForm = (props) => {
                             <input onChange={checkboxChangeHandler} checked={isChecked} type="checkbox" defaultValue="1" name="ship_to_different_address" className="input-checkbox" id="ship-to-different-address-checkbox" />
                         </h3>
                         {/* {isChecked && <DiffAdress />} */}
-                        {isChecked && <BillingDetailsForm title="shippingAdress" formData={differentAddressData} setFormData={setDifferentAddressData}/>}
+                        {isChecked && <BillingDetailsForm title="shippingAdress" formData={differentAddressData} setFormData={setDifferentAddressData} />}
 
 
 
@@ -89,7 +97,7 @@ const GlobaleForm = (props) => {
             <div id="order_review" style={{ position: "relative" }}>
 
                 <OrderTable />
-                <PaymentMethod />
+                <PaymentMethod onSelectPayment={PaymentTypeHandler} />
 
 
             </div>
