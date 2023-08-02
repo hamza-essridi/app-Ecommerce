@@ -58,13 +58,13 @@ const PaymentMethod = (props) => {
                 </li>
             </ul>
 
-            <div className="form-row place-order">
+            {/* <div className="form-row place-order">
 
-                {/* <input type="button" data-value="Place order" defaultValue="Place order" id="place_order" name="woocommerce_checkout_place_order" className="button alt" /> */}
+                {/* <input type="button" data-value="Place order" defaultValue="Place order" id="place_order" name="woocommerce_checkout_place_order" className="button alt" /> 
                 <input type="button" defaultValue="Place order" id="place_order" name="woocommerce_checkout_place_order" className="button alt" />
 
 
-            </div>
+            </div> */}
 
             <div className="clear"></div>
 
