@@ -18,9 +18,9 @@ const ProductItem = (props) => {
   ).toFixed(2);
   let srcImage = props.image.split("-")[0];
   let urlImage = `/produts-img/${srcImage}/${props.image}`;
-  console.log(urlImage);
+  
   const addProductHandler = () => {
-    console.log("helllllo");
+    
     dispatch(
       productsActions.productAdded({ name, finaleprice, image, id, urlImage })
     );
