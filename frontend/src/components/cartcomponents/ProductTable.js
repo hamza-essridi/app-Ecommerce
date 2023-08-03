@@ -5,23 +5,29 @@ import './ProductTable.css';
 
 const ProductTable = (props) => {
 
-  const { name, quantity, total, price, id, urlImage ,image } = props.item;
+  const { name, quantity, total, price, id, urlImage, image } = props.item;
   const dispatch = useDispatch();
 
 
   const addProductHandler = () => {
-    let finaleprice =price
+    let finaleprice = price
     dispatch(productsActions.productAdded({ name, finaleprice, image, id, urlImage }))
   }
   const removeProductHandler = () => {
-dispatch(productsActions.removeProductFromCart(id));
+    dispatch(productsActions.removeProductFromCart(id));
+  }
+
+  const removeAllQteProductHandler = () => {
+    dispatch(productsActions.removeAllQteproduct(id));
   }
   return (
     <>
       <tr className="cart_item">
         <td className="product-remove">
-          <a title="Remove this item" className="remove" href="#">
-            ×
+          {/* this remove total */}
+          <button onClick={removeAllQteProductHandler} className="remove" title="Remove this item">×</button>
+          <a title="Remove this item" onClick={removeAllQteProductHandler}  className="remove" >
+          ×
           </a>
         </td>
 

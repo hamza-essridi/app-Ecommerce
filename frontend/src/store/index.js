@@ -74,6 +74,13 @@ const productsSlice = createSlice({
 
       }
     },
+    removeAllQteproduct(state,action){
+      const id = action.payload;
+      const existingProduct = state.products.find((item) => item.ProductId === id);
+      state.totalQuantity--;
+      state.totaleAmount -=existingProduct.price; 
+      state.products = state.products.filter((item) => item.ProductId !== id);
+    },
     ///////
     productsViewAdd(state,action){
       //state.newProductsViewed = localStorage.getItem('lastViewed')
