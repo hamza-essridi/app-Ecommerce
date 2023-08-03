@@ -2,6 +2,7 @@ import GlobaleForm from "../components/checkout/GlobalForm";
 import SiteBrandingArea from "../components/SiteBrandingArea";
 import BigTitle from "../components/UI/BigTitle";
 import Card from "../components/UI/Card";
+import FooterTopArea from "../components/footer/FooterTopArea";
 
 const CheckoutPage = () => {
 
@@ -9,18 +10,18 @@ const CheckoutPage = () => {
         <SiteBrandingArea />
         <div>
 
-        <BigTitle title="Checkout"/>
+            <BigTitle title="Checkout" />
 
-        <Card>
-        <GlobaleForm/>
-        <h1>CheckoutPage</h1>
+            <Card>
+                <GlobaleForm />
+                <h1>CheckoutPage</h1>
 
-        </Card>
-        
-        
+            </Card>
+
+
         </div>
 
-
+        <FooterTopArea />
 
     </>);
 }

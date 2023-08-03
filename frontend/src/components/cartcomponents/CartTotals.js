@@ -1,6 +1,11 @@
+import { useSelector } from "react-redux";
 import "./CartTotals.css";
 
 const CartTotal = () => {
+
+
+  const totale =useSelector((state) => state.prods.totaleAmount);
+  const tax = totale-(totale*0.2);//i don't know how calculated
   return (
     <>
       <div className="cart_totals ">
@@ -11,20 +16,20 @@ const CartTotal = () => {
             <tr className="cart-subtotal">
               <th>Cart Subtotal</th>
               <td>
-                <span className="amount">15.00 €</span>
+                <span className="amount">{totale}€</span>
               </td>
             </tr>
 
             <tr className="shipping">
               <th>Taxe (20%)</th>
-              <td>20.23 €</td>
+              <td>{tax} €</td>
             </tr>
 
             <tr className="order-total">
               <th>Order Total</th>
               <td>
                 <strong>
-                  <span className="amount">15.00 €</span>
+                  <span className="amount">{totale}€</span>
                 </strong>{" "}
               </td>
             </tr>
